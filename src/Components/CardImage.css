@@ -1,0 +1,78 @@
+.card-container {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  left: 5%;
+}
+
+.img-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+  border-radius: 30px;
+  
+}
+
+.card-image:nth-child(1) {
+  animation: fade 30s infinite 0s;
+}
+
+.card-image:nth-child(2) {
+  animation: fade 30s infinite 5s;
+}
+
+.card-image:nth-child(3) {
+  animation: fade 30s infinite 10s;
+}
+
+.card-image:nth-child(4) {
+  animation: fade 30s infinite 15s;
+}
+
+.card-image:nth-child(5) {
+  animation: fade 30s infinite 20s;
+}
+
+.card-image:nth-child(6) {
+  animation: fade 30s infinite 25s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    z-index: 1;
+  }
+  18% {
+    opacity: 1;
+    z-index: 2; /* Mantém a imagem na frente */
+  }
+  25% {
+    opacity: 1;
+    z-index: 2; /* Mantém a imagem visível */
+  }
+  35% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+.input-slide{
+  visibility: hidden;
+}

@@ -1,0 +1,38 @@
+
+.Nav{
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    display: flex;
+    position: relative;
+    border-bottom: 1px black solid;
+}
+
+.input-nav{
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    left: 530%;
+    top: 70%;
+}
+.menu{
+    position: relative;
+    top: 100%;
+    display: flex;
+    right: 16%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+span{
+    cursor: pointer;
+}
+.icon-search{
+    background-color: aliceblue;
+    position: relative;
+    left: 1275px;
+    top: 48%;
+    cursor: pointer;
+    background: transparent;
+}

@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha quando necessário */
+    gap: 10px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens */
+    padding: 20px;
+
+}
+
+.movie-item {
+    text-align: center; /* Centraliza o texto */
+    width: 200px;
+    margin: 10px; /* Adiciona espaçamento ao redor dos itens */
+    left: 2%;
+    position: relative;
+}
+
+
+
+.imgCards {
+    width: 150px; /* Ajusta a imagem para caber dentro do contêiner pai */
+    height: auto; /* Mantém a proporção correta da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba black; /* Adiciona sombra à imagem */
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+  
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 100%; /* Para ocupar a largura da imagem */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais transparente */
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 90%; /* Posiciona sobre a imagem */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a tooltip */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 0.8; /* Deixa a tooltip um pouco mais invisível */
+  }
+  
